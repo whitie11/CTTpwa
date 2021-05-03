@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1620062857302,
+  "index": "/CTTpwa/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/CTTpwa/favicon.ico",
+        "/CTTpwa/index.html",
+        "/CTTpwa/main.cf0deb4f70c755495c5e.js",
+        "/CTTpwa/manifest.webmanifest",
+        "/CTTpwa/polyfills.00096ed7d93ed26ee6df.js",
+        "/CTTpwa/runtime.7b63b9fd40098a2e8207.js",
+        "/CTTpwa/styles.4d1e9542005c166fb561.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/CTTpwa/assets/icons/icon-128x128.png",
+        "/CTTpwa/assets/icons/icon-144x144.png",
+        "/CTTpwa/assets/icons/icon-152x152.png",
+        "/CTTpwa/assets/icons/icon-192x192.png",
+        "/CTTpwa/assets/icons/icon-384x384.png",
+        "/CTTpwa/assets/icons/icon-512x512.png",
+        "/CTTpwa/assets/icons/icon-72x72.png",
+        "/CTTpwa/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/CTTpwa/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/CTTpwa/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/CTTpwa/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/CTTpwa/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/CTTpwa/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/CTTpwa/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/CTTpwa/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/CTTpwa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/CTTpwa/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/CTTpwa/index.html": "a92a302dffd3b22fa53631b40e1d9f0c5856c930",
+    "/CTTpwa/main.cf0deb4f70c755495c5e.js": "3b66c863c695bf58359bfdf24ab56ac1d3f2913f",
+    "/CTTpwa/manifest.webmanifest": "5bc3fd66cb3ba4eb0dd24709b43e46a21ffad8e1",
+    "/CTTpwa/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/CTTpwa/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/CTTpwa/styles.4d1e9542005c166fb561.css": "a297918ed219319c87cdfa649642873f08a59133"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
