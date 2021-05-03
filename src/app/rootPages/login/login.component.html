@@ -1,0 +1,31 @@
+<span>Clinical Treatment Team </span>
+
+<mat-card class="login-card">
+	<mat-card-content>
+		<mat-toolbar> 
+        <!-- <mat-toolbar-row>  </mat-toolbar-row> -->
+        <mat-toolbar-row> <span>Please Login</span></mat-toolbar-row>	
+		</mat-toolbar>
+        
+		
+		<form [formGroup]="formdata" class="my-form" (ngSubmit)="onSubmit()" >
+
+			<mat-form-field class="full-width">
+				<mat-label>User Name</mat-label>
+				<input type="text" matInput  placeholder="User Name?" formControlName="username">
+         </mat-form-field>
+				<mat-form-field class="full-width">
+					<mat-label>Password</mat-label>
+					<input type="password" matInput  placeholder="Password?"  formControlName="password" autocomplete="nope" >
+         </mat-form-field>
+					<button mat-raised-button color="accent" type="submit"  [disabled]="!formdata.valid">Submit</button>
+
+	  </form>
+	</mat-card-content>
+</mat-card>
+<div *ngIf="waiting$ | async">
+    <mat-spinner style="margin:0 auto;" ></mat-spinner>
+  </div>
+<!-- <div *ngIf="isAuth$ | async">
+	<button mat-raised-button color="accent" type="button"  (click)="onLogOut()">Logout</button>
+</div> -->
