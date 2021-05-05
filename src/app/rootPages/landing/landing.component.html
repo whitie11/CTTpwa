@@ -1,0 +1,26 @@
+
+<mat-toolbar color="primary">
+    <span>
+        <button  mat-raised-button color="secondary" type="button"  [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        
+    </span>
+    <span class="example-spacer"></span>
+    <span>CTT Team Information Board</span>
+    <span class="example-spacer"></span>
+    <span>
+        <button  mat-raised-button color="accent" type="button" (click)="onLogOut()">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </span>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="'/messages'">Messages</button>
+    <button mat-menu-item [routerLink]="'/rosta'">Rosta</button>
+  </mat-menu>
+
+<router-outlet></router-outlet>
+
+

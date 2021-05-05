@@ -19,12 +19,18 @@ import { MaterialsModule } from './_materials/materials.module';
 import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { LandingComponent } from './rootPages/landing/landing.component';
+import { MessagesComponent } from './rootPages/messages/messages.component';
+import { RostaComponent } from './rootPages/rosta/rosta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogInComponent,
-    HomeComponent
+    HomeComponent,
+    LandingComponent,
+    MessagesComponent,
+    RostaComponent
   ],
   imports: [
     MaterialsModule,
