@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620062857302,
+  "timestamp": 1620253070521,
   "index": "/CTTpwa/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/CTTpwa/favicon.ico",
         "/CTTpwa/index.html",
-        "/CTTpwa/main.cf0deb4f70c755495c5e.js",
+        "/CTTpwa/main.949aa3104429b1910547.js",
         "/CTTpwa/manifest.webmanifest",
         "/CTTpwa/polyfills.00096ed7d93ed26ee6df.js",
         "/CTTpwa/runtime.7b63b9fd40098a2e8207.js",
@@ -52,8 +52,8 @@
     "/CTTpwa/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/CTTpwa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/CTTpwa/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/CTTpwa/index.html": "a92a302dffd3b22fa53631b40e1d9f0c5856c930",
-    "/CTTpwa/main.cf0deb4f70c755495c5e.js": "3b66c863c695bf58359bfdf24ab56ac1d3f2913f",
+    "/CTTpwa/index.html": "f2307d5f9e2a9996932c758904da7f65d4ebf80d",
+    "/CTTpwa/main.949aa3104429b1910547.js": "d9efe637587d644e37dc28265a82a21a1fd339ab",
     "/CTTpwa/manifest.webmanifest": "5bc3fd66cb3ba4eb0dd24709b43e46a21ffad8e1",
     "/CTTpwa/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "/CTTpwa/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
