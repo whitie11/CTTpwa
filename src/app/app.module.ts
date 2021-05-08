@@ -22,6 +22,8 @@ import { environment } from '../environments/environment';
 import { LandingComponent } from './rootPages/landing/landing.component';
 import { MessagesComponent } from './rootPages/messages/messages.component';
 import { RostaComponent } from './rootPages/rosta/rosta.component';
+import { DateAdapter, MAT_DATE_LOCALE } from '@angular/material/core';
+import { CustomDateAdapter } from './_helpers/CustomDateAdapter';
 
 @NgModule({
   declarations: [
@@ -41,10 +43,10 @@ import { RostaComponent } from './rootPages/rosta/rosta.component';
     FormsModule,
     ReactiveFormsModule,
 
-    StoreModule.forRoot( reducers, { }),
+    StoreModule.forRoot(reducers, {}),
     EffectsModule.forRoot([AuthEffects,
       // MessageEffects, LibraryEffects, RostaEffects
-      ]),
+    ]),
     StoreRouterConnectingModule.forRoot(),
     StoreDevtoolsModule.instrument(),
     ServiceWorkerModule.register('ngsw-worker.js', {
@@ -60,6 +62,14 @@ import { RostaComponent } from './rootPages/rosta/rosta.component';
   providers: [
     AuthService,
     AuthGuardService,
+    {
+      provide: DateAdapter,
+      useClass: CustomDateAdapter
+    },
+    {
+      provide: MAT_DATE_LOCALE,
+      useValue: 'en-GB',
+    }
   ],
   bootstrap: [AppComponent]
 })

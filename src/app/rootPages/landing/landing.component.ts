@@ -11,7 +11,9 @@ import * as AuthActions from '../../_store/auth/auth.actions';
 })
 export class LandingComponent implements OnInit {
 
-  constructor(private store: Store<AppState>) { }
+
+constructor(private store: Store<AppState>) {}
+
 
   ngOnInit(): void {
   }
