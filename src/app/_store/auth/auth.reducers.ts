@@ -12,6 +12,7 @@ export interface AuthState {
   errorMessage: string | null;
   role: string | null;
   isWaiting: boolean;
+  staffId: number | null;
 }
 
 export const initialState: AuthState = {
@@ -20,7 +21,8 @@ export const initialState: AuthState = {
   token: null,
   errorMessage: null,
   role: null,
-  isWaiting: false
+  isWaiting: false,
+  staffId: null
 };
 
 // //  //
@@ -41,6 +43,7 @@ const reducer = createReducer(
       errorMessage: null,
       token: payload.token,
       role: payload.role,
+      staffId: payload.staffId
     };
   }),
   on(AuthActions.LogInFailure, (state: AuthState, { payload }) => {

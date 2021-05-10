@@ -14,7 +14,7 @@ import { AuthEffects } from './_store/auth/auth.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AuthService } from './_services/auth.service';
 import { AuthGuardService } from './_helpers/auth.guard';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MaterialsModule } from './_materials/materials.module';
 import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -24,6 +24,7 @@ import { MessagesComponent } from './rootPages/messages/messages.component';
 import { RostaComponent } from './rootPages/rosta/rosta.component';
 import { DateAdapter, MAT_DATE_LOCALE } from '@angular/material/core';
 import { CustomDateAdapter } from './_helpers/CustomDateAdapter';
+import { TokenInterceptor } from './_helpers/token_interceptor';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,11 @@ import { CustomDateAdapter } from './_helpers/CustomDateAdapter';
   providers: [
     AuthService,
     AuthGuardService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    },
     {
       provide: DateAdapter,
       useClass: CustomDateAdapter

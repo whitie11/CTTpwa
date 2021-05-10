@@ -23,6 +23,9 @@ export const getToken = createSelector(selectAuthState,
 export const getRole = createSelector(selectAuthState,
     (state: AuthState) => state.role);
 
+export const getStaffId = createSelector(selectAuthState,
+        (state: AuthState) => state.staffId);
+
 export const getErrorMessage = createSelector(selectAuthState,
     (state: AuthState) => state.errorMessage);
 
